@@ -54,7 +54,7 @@ constructor(public navCtrl : NavController, public toastCtrl : ToastController, 
     
   });
 }
-
+//editing items
   editItem(item, index) {
     console.log("Edit Item - ", item, index);
     const toast = this
@@ -64,6 +64,7 @@ constructor(public navCtrl : NavController, public toastCtrl : ToastController, 
     this.inputDialogService.showPrompt(item, index);
     
   }
+  //adding items
    addItem(){
      console.log("Adding item")
      this.inputDialogService.showPrompt();
